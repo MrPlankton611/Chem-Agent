@@ -40,8 +40,6 @@ Once installed, create a new local database, start it, and install the APOC plug
 ### 2. Project Setup
 Clone the Repository:
 
-Bash
-
 git clone https://github.com/your-username/chemagent.git
 cd chemagent
 Install Python Dependencies: Create a requirements.txt file with the following content:
@@ -53,12 +51,8 @@ ollama
 neo4j
 Then, install the packages:
 
-Bash
-
 python3 -m pip install -r requirements.txt
 Pull the LLM: Download the Llama 3 8B model via Ollama.
-
-Bash
 
 ollama pull llama3:8b
 ## Usage
@@ -67,15 +61,11 @@ Running the agent is a two-step process. First, you must populate the knowledge 
 ### Step 1: Populate the Knowledge Base
 The agent's knowledge comes from the data you load into Neo4j. Run the ingestion script to add data from your source files (e.g., text from the OpenStax textbook).
 
-Bash
-
 python3 load_data.py
 (You only need to do this when you want to add new information to the database.)
 
 ### Step 2: Run the ChemAgent Tutor
 Start the main application to begin chatting with your AI tutor. Make sure Ollama and your Neo4j database are running before you start.
-
-Bash
 
 python3 chem_agent.py
 The script will launch, and you can start asking AP Chemistry questions in your terminal. Type exit to quit.
