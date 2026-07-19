@@ -27,7 +27,7 @@ tools = [
         definitions, and principles from the knowledge graph."""
     ),
 ]
-
+  
 # === THIS IS WHERE YOU PASTE YOUR PROMPT ===
 prompt_text = """
 Here is a detailed prompt designed to generate the framework for an agentic AI system that runs locally on your M4 MacBook Air.
